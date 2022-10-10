@@ -1,0 +1,18 @@
+Description: add sunway support
+Author: Miao Changwei <miaochangwei@uniontech.com>
+
+---
+Last-Update: 2022-05-14
+
+--- libiodbc2-3.52.9.orig/include/iodbcunix.h
++++ libiodbc2-3.52.9/include/iodbcunix.h
+@@ -146,7 +146,8 @@ typedef int			BOOL;
+     defined (__64BIT__)	|| \
+     defined (__alpha)	|| \
+     defined (__sparcv9)	|| \
+-    defined (__arch64__)
++    defined (__arch64__)|| \
++    defined (__sw_64__)
+ #define SIZEOF_LONG	8		/* 64 bit operating systems */
+ #else
+ #define SIZEOF_LONG	4		/* 32 bit operating systems */

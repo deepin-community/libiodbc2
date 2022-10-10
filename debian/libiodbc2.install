@@ -1,0 +1,2 @@
+debian/tmp/usr/lib/*/libiodbc.so.*
+debian/tmp/usr/lib/*/libiodbcinst.so.*
